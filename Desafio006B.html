@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio006B.html</title>
+
+    <script>
+        function main() {
+            // pegar 1 caracter Flow char(nome,i)
+            //                  Javascript nome[i]
+            // pegar o ultimo  Flow len(nome)
+            //                  Javascript nome.length
+            nome=prompt("Entre um nome: ");
+            console.log(nome[0]);
+            console.log(nome.length);
+            console.log(nome[nome.length-1]);
+            console.log(nome[3]);  
+            // i++  i=i+1
+            // i--  i=i-1
+            // i+=2 i=i+2
+            nome1="";
+            for(i=1;i<nome.length;i++) {
+                nome1+=nome[i];  // nome1=nome1+nome[i]
+            } 
+            console.log(nome1); 
+            console.log(nome[nome.length-2]+nome[nome.length-1]);
+            
+            nome1=inverte_str(nome);
+            console.log(nome1); 
+        }
+        function inverte_str(str) {
+            str_inv="";
+            for(i=str.length-1;i>=0;i--) {
+                str_inv+=str[i];  
+            }
+            return str_inv;
+        }
+    </script>
+</head>
+<body onload="main()">
+    
+</body>
+</html>

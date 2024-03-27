@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+    <script>
+        function main() {
+            // 20240301  
+            data=parseInt(prompt("Digite data como aaaammdd:"));  
+            ano=parseInt(data/10000); // 2024.0311 -> 2024
+            mes=parseInt(data%10000/100);  // 0311 -> 03.11 -> 3
+            dia=data%100; // 11
+            console.log(dia+"/"+mes+"/"+ano); // 11/3/2024
+            if(mes<=9) {
+                if(dia<=9) {
+                    console.log("0"+dia+"/0"+mes+"/"+ano); // 01/03/2024
+                }
+                else {
+                    console.log(dia+"/0"+mes+"/"+ano); // 12/03/2024
+                }  
+            }
+            else {
+                if(dia<=9) {
+                    console.log("0"+dia+"/"+mes+"/"+ano); // 01/12/2024                    
+                }
+                else {
+                    console.log(dia+"/"+mes+"/"+ano); // 11/12/2024
+                }               
+            }
+        }
+
+    </script>
+</head>
+<body onload="main()">
+</body>
+</html>

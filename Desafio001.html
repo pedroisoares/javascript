@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio001.html</title>
+
+    <script>
+        function main() {
+            // 20240311  2024
+            // 0311      3
+            // 202403  11
+            data=prompt("Entre data aaaammdd:");
+            ano=parseInt(data/10000);
+            mes=parseInt(data%10000/100);
+            dia=data%100;
+            if(mes<=9) {
+                console.log(dia+"/0"+mes+"/"+ano);               
+            }
+            else {
+                console.log(dia+"/"+mes+"/"+ano);
+            }
+ 
+        }
+    </script>
+</head>
+<body onload="main()">
+
+</body>
+</html>
+
+

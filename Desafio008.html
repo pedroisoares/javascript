@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio008.html</title>
+
+    <script>
+        function main() {
+            cpf=prompt("Entre um CPF: ");
+            cpf1="";
+            for(i=0;i<cpf.length;i++) {
+                if(i==cpf.length-1) {
+                    cpf1+=cpf[i];
+                }
+                else {
+                    cpf1+=cpf[i]+" - ";
+                }
+ 
+            }
+            console.log(cpf);
+            console.log(cpf1);
+
+        }
+    </script>
+</head>
+<body onload="main()">
+    
+</body>
+</html>
